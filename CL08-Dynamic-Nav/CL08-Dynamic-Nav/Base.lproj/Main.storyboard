@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Japanese Food-->
         <scene sceneID="DTn-08-MK4">
             <objects>
                 <tableViewController id="f0n-5S-XiJ" customClass="ViewController" customModule="CL08_Dynamic_Nav" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,8 +50,8 @@
                             <outlet property="delegate" destination="f0n-5S-XiJ" id="MrV-CC-zof"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="30a-V1-hvu">
-                        <barButtonItem key="backBarButtonItem" title="Return" id="LSy-UK-D9g"/>
+                    <navigationItem key="navigationItem" title="Japanese Food" id="30a-V1-hvu">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="LSy-UK-D9g"/>
                     </navigationItem>
                     <connections>
                         <outlet property="vv_tableView" destination="j6h-4x-qjR" id="SRg-KS-zbs"/>
@@ -70,26 +70,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XQC-dc-ini">
-                                <rect key="frame" x="0.0" y="92" width="393" height="726"/>
+                                <rect key="frame" x="16" y="103" width="96" height="96"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Japanese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cW-hd-865">
+                                <rect key="frame" x="257" y="137" width="96" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0k-ph-bRb">
+                                <rect key="frame" x="16" y="217" width="105" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wR-Wy-qUr">
+                                <rect key="frame" x="32" y="278" width="329" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="333" id="up2-xg-xBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wu3-B7-iJy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XQC-dc-ini" firstAttribute="bottom" secondItem="Wu3-B7-iJy" secondAttribute="bottom" id="Jzx-Y3-OMo"/>
-                            <constraint firstItem="XQC-dc-ini" firstAttribute="centerX" secondItem="cCO-28-962" secondAttribute="centerX" id="M9V-Gq-00D"/>
-                            <constraint firstItem="XQC-dc-ini" firstAttribute="top" secondItem="cCO-28-962" secondAttribute="topMargin" constant="-11" id="k3g-gl-hWp"/>
-                            <constraint firstItem="XQC-dc-ini" firstAttribute="leading" secondItem="Wu3-B7-iJy" secondAttribute="leading" id="nbP-x5-7bI"/>
+                            <constraint firstItem="Wu3-B7-iJy" firstAttribute="trailing" secondItem="2wR-Wy-qUr" secondAttribute="trailing" constant="32" id="1m7-Vb-ffe"/>
+                            <constraint firstItem="Wu3-B7-iJy" firstAttribute="trailing" secondItem="XQC-dc-ini" secondAttribute="trailing" constant="281" id="3xE-E1-qYD"/>
+                            <constraint firstItem="0cW-hd-865" firstAttribute="centerY" secondItem="XQC-dc-ini" secondAttribute="centerY" id="5yJ-Ma-2UW"/>
+                            <constraint firstItem="Wu3-B7-iJy" firstAttribute="trailing" secondItem="0cW-hd-865" secondAttribute="trailing" constant="40" id="6FP-XP-DWa"/>
+                            <constraint firstItem="XQC-dc-ini" firstAttribute="leading" secondItem="cCO-28-962" secondAttribute="leadingMargin" id="Dyc-eR-qUV"/>
+                            <constraint firstItem="h0k-ph-bRb" firstAttribute="leading" secondItem="XQC-dc-ini" secondAttribute="leading" id="Evg-fY-iY7"/>
+                            <constraint firstItem="2wR-Wy-qUr" firstAttribute="leading" secondItem="Wu3-B7-iJy" secondAttribute="leading" constant="32" id="GwF-Gq-uku"/>
+                            <constraint firstItem="2wR-Wy-qUr" firstAttribute="top" secondItem="h0k-ph-bRb" secondAttribute="bottom" constant="16" id="LXb-u7-2yH"/>
+                            <constraint firstItem="Wu3-B7-iJy" firstAttribute="bottom" secondItem="XQC-dc-ini" secondAttribute="bottom" constant="619" id="bi9-a9-7SQ"/>
+                            <constraint firstItem="XQC-dc-ini" firstAttribute="top" secondItem="Wu3-B7-iJy" secondAttribute="top" id="ekh-S5-ZM6"/>
+                            <constraint firstItem="h0k-ph-bRb" firstAttribute="top" secondItem="XQC-dc-ini" secondAttribute="bottom" constant="18" id="lgh-hX-arW"/>
+                            <constraint firstItem="Wu3-B7-iJy" firstAttribute="bottom" secondItem="2wR-Wy-qUr" secondAttribute="bottom" constant="207" id="zdJ-zQ-eSs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3I9-gt-jaG"/>
                     <connections>
+                        <outlet property="recipe" destination="2wR-Wy-qUr" id="fg3-aK-TqR"/>
                         <outlet property="vv_imageView" destination="XQC-dc-ini" id="HZg-Js-8dE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuA-ik-VP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="-26"/>
+            <point key="canvasLocation" x="1878.6259541984732" y="-26.056338028169016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="94V-Nu-Nqd">
@@ -113,6 +143,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
